@@ -70,9 +70,8 @@ class Interface(tk.Frame):
             text="Ir ao Menu",
             command=lambda: controller.show_frame(Menu)
         )
-
         lus.pack(fill=tk.X)
-        switch_window_button.place(width=90, height=87, x=52, y=391)
+        switch_window_button.pack(side="bottom",fill=tk.X)
         sd.pack()
 
 
