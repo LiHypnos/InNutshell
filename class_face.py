@@ -50,7 +50,7 @@ class Face(tk.Tk):
         # raises the current frame to the top
         frame.tkraise()
 
-
+#_________________________________________________________________________
 class Interface(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -81,8 +81,7 @@ class Interface(tk.Frame):
         lus.pack(fill=tk.X)
         switch_window_button.place(width=450, height=750, x=0, y=0)
         sd.pack()
-
-
+#_________________________________________________________________________
 class Menu(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -115,8 +114,7 @@ class Menu(tk.Frame):
         switch_window_button.place(width=90, height=87, x=52, y=391)
         switch_window_button2.place(width=90, height=87, x=286, y=391)
         menu.pack()
-
-
+#_________________________________________________________________________
 class LoginUser(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -136,7 +134,7 @@ class LoginUser(tk.Frame):
         labelr.pack()
         lub.place(width=237, height=24, x=167, y=216)
         lix.place(width=213, height=26, x=207, y=291)
-
+#_________________________________________________________________________
 class LoginFun(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -154,7 +152,7 @@ class LoginFun(tk.Frame):
         labelr.pack
         userF.place(width=232, height=23, x=174, y=263)
         userS.place(width=214, height=25, x=203, y=335)
-
+#_________________________________________________________________________
 class Feed(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -204,7 +202,7 @@ class Feed(tk.Frame):
         labelr.pack
         labelrs = tk.Label(self, bg='#ff57bc')
         labelrs.place(width=307, height=501, x=104, y=142)
-
+#_________________________________________________________________________
 class FeedFun(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -243,6 +241,7 @@ class FeedFun(tk.Frame):
         nomeF.place(width=259, height=31, x=106, y=20)
         datar.place(width=92, height=19, x=208, y=83)
         labelr.pack
+#_________________________________________________________________________
 class MudarS(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -274,7 +273,7 @@ class MudarS(tk.Frame):
         )
         switch_window_button.place(width=15, height=8, x=37, y=566)
         switch_window_button1.place(width=7, height=9, x=25, y=626)
-
+#_________________________________________________________________________
 class Banir(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -307,7 +306,7 @@ class Banir(tk.Frame):
         )
         switch_window_button.place(width=15, height=8, x=37, y=566)
         switch_window_button1.place(width=7, height=9, x=25, y=626)
-
+#_________________________________________________________________________
 class Suspender(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -341,8 +340,7 @@ class Suspender(tk.Frame):
         idsus.place(width=235, height=25, x=154, y=237)
         temposus.place(width=226, height=28, x=160, y=303)
         confirmsus.place(width=102, height=24, x=234, y=420)
-
-
+#_________________________________________________________________________
 class Postar(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -359,9 +357,7 @@ class Postar(tk.Frame):
         datar.place(width=92, height=19, x=208, y=83)
         post.place(width=393, height=382, x=27, y=134)
         postar.place(width=262, height=43, x=94, y=552)
-
-
-
+#_________________________________________________________________________
 class Criar(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -381,7 +377,7 @@ class Criar(tk.Frame):
 
         sing= tk.Button(self, bg='#001B40', foreground='#FF0099', text='☭', font='Arial 15', relief=FLAT)
         sing.place(width=27, height=15, x=208, y=513)
-
+#_________________________________________________________________________
 class Excluir(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -413,7 +409,7 @@ class Excluir(tk.Frame):
 
         pesquisarid= tk.Button(self, bg='#FF0099', relief=FLAT)
         pesquisarid.place(width=41, height=26, x=320, y=170)
-
+#_________________________________________________________________________
 class Nuts(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -439,7 +435,7 @@ class Nuts(tk.Frame):
         )
         switch_window_button.place(width=15, height=8, x=37, y=566)
         switch_window_button1.place(width=7, height=9, x=25, y=626)
-
+#_________________________________________________________________________
 
 if __name__ == "__main__":
     root = Face()
